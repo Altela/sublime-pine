@@ -17,12 +17,22 @@
             "details": "A simple, non-<code>async</code> function definition"
         },
 
-                {
+        {
             "trigger": "for...in",
             "annotation": "Looping",
             "contents": "for ${1:x} in ${2:y}\n ${3:statement}\n  ${4:return_statement}\n $0\n",
             "kind": "snippet",
             "details": "A simple, non-<code>async</code> function definition"
+        },
+
+        {
+            "trigger": "switch",
+            "annotation": "Conditional Statement",
+            "contents": "${1:variable_x} = switch ${2:expression}\n ${3:value1} => ${4:local_block}\n ${5:value2} => ${6:local_block}\n... \n => ${7:default_local_block}\n $0\n",
+            "kind": "snippet",
+            "details": "Switch With Expression"
         }
+
     ]
 }
+
