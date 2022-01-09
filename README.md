@@ -30,7 +30,7 @@ Close Sublime Text then download or clone this repository to a directory named `
 
 * Linux: `git clone https://github.com/gerardroche/sublime-pine.git ~/.config/sublime-text-3/Packages/Pine`
 * OSX: `git clone https://github.com/gerardroche/sublime-pine.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Pine`
-* Windows: `git clone https://github.com/gerardroche/sublime-pine.git %APPDATA%\Sublime/ Text/ 3/Packages/Pine`
+* Windows: `git clone https://github.com/gerardroche/sublime-pine.git && %APPDATA%\"Sublime Text 3"/packages/`
 
 ## License
 
