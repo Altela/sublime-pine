@@ -7,6 +7,14 @@
             "contents": "if ${1:condition1} > ${2:condition2}:\n   ${3:result1}\n else\n ${4:result2} $0\n",
             "kind": "snippet",
             "details": "A simple, non-<code>async</code> function definition"
+        },
+
+        {
+            "trigger": "for",
+            "annotation": "Looping",
+            "contents": "for ${1:i} = ${2:x} to ${3:y}\n ${4:statement}\n  ${5:return}\n $0\n",
+            "kind": "snippet",
+            "details": "A simple, non-<code>async</code> function definition"
         }
     ]
 }
