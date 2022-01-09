@@ -12,7 +12,15 @@
         {
             "trigger": "for",
             "annotation": "Looping",
-            "contents": "for ${1:i} = ${2:x} to ${3:y}\n ${4:statement}\n  ${5:return}\n $0\n",
+            "contents": "for ${1:i} = ${2:x} to ${3:y}\n ${4:statement}\n  ${5:return_statement}\n $0\n",
+            "kind": "snippet",
+            "details": "A simple, non-<code>async</code> function definition"
+        },
+
+                {
+            "trigger": "for...in",
+            "annotation": "Looping",
+            "contents": "for ${1:x} in ${2:y}\n ${3:statement}\n  ${4:return_statement}\n $0\n",
             "kind": "snippet",
             "details": "A simple, non-<code>async</code> function definition"
         }
