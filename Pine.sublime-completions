@@ -1,0 +1,12 @@
+{
+    "scope": "source.pine",
+    "completions": [
+        {
+            "trigger": "if",
+            "annotation": "Conditional Statement",
+            "contents": "if ${1:condition1} > ${2:condition2}:\n   ${3:result1}\n else\n ${4:result2} $0\n",
+            "kind": "snippet",
+            "details": "A simple, non-<code>async</code> function definition"
+        }
+    ]
+}
