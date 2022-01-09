@@ -3,42 +3,42 @@
     "completions": [
         {
             "trigger": "if",
-            "annotation": "Conditional Statement",
-            "contents": "if ${1:condition1} > ${2:condition2}:\n   ${3:result_true}\n else\n ${4:result_false} $0\n",
+            "annotation": "If Condition",
+            "contents": "if ${1:condition1} > ${2:condition2}:\n    ${3:result_true}\n else\n    ${4:result_false} $0\n",
             "kind": "snippet",
-            "details": "A simple, non-<code>async</code> function definition"
+            "details": "If conditional statement snippets"
         },
 
         {
             "trigger": "for",
-            "annotation": "Looping",
-            "contents": "for ${1:counter} = ${2:from_number} to ${3:other_number}\n ${4:statements}\n  ${5:return_statement}\n $0\n",
+            "annotation": "For Loop",
+            "contents": "for ${1:counter} = ${2:from_number} to ${3:other_number}\n     ${4:statements}\n     ${5:return_statement}\n $0\n",
             "kind": "snippet",
-            "details": "A simple, non-<code>async</code> function definition"
+            "details": "For loop snippets"
         },
 
         {
             "trigger": "for...in",
-            "annotation": "Looping",
-            "contents": "for ${1:number} in ${2:numbers}\n ${3:statements}\n  ${4:return_statement}\n $0\n",
+            "annotation": "For...In Looping",
+            "contents": "for ${1:number} in ${2:numbers}\n  ${3:statements}\n  ${4:return_statement}\n $0\n",
             "kind": "snippet",
-            "details": "A simple, non-<code>async</code> function definition"
+            "details": "For...in loop snippets"
         },
 
         {
             "trigger": "switch",
-            "annotation": "Conditional Statement",
-            "contents": "switch ${1:expression}\n ${2:value1} => ${3:local_block}\n ${4:value2} => ${5:local_block}\n... \n => ${6:default_local_block}\n $0\n",
+            "annotation": "Switch Conditional Statement",
+            "contents": "switch ${1:expression}\n ${2:value1} => ${3:local_block}\n ${4:value2} => ${5:local_block}\n ${6:...} \n => ${7:default_local_block}\n $0\n",
             "kind": "snippet",
-            "details": "Switch With Expression"
+            "details": "Switch with expression snippets"
         },
 
         {
             "trigger": "switch",
-            "annotation": "Conditional Statement",
-            "contents": "switch\n ${1:value1} => ${2:local_block}\n ${3:value2} => ${4:local_block}\n... \n => ${5:default_local_block}\n $0\n",
+            "annotation": "Switch Conditional Statement",
+            "contents": "switch\n ${1:value1} => ${2:local_block}\n ${3:value2} => ${4:local_block}\n ${5:...} \n => ${6:default_local_block}\n $0\n",
             "kind": "snippet",
-            "details": "Switch Without Expression"
+            "details": "Switch without expression snippets"
         },
 
         {
@@ -46,7 +46,7 @@
             "annotation": "Variable",
             "contents": "var ${1:variable_name} = ${2:expression} $0\n",
             "kind": "snippet",
-            "details": "Variable"
+            "details": "Variable snippets"
         },
 
         {
@@ -54,7 +54,7 @@
             "annotation": "Variable",
             "contents": "varip ${1:variable_name} = ${2:expression} $0\n",
             "kind": "snippet",
-            "details": "Variable"
+            "details": "Var Intrabar Persist snippets"
         },
 
         {
@@ -62,7 +62,7 @@
             "annotation": "Variable",
             "contents": "while ${1:boolean_expression}\n ${3:return_expression} $0\n",
             "kind": "snippet",
-            "details": "Variable"
+            "details": "While Snippets"
         }
 
     ]
