@@ -4,7 +4,7 @@
         {
             "trigger": "if",
             "annotation": "Conditional Statement",
-            "contents": "if ${1:condition1} > ${2:condition2}:\n   ${3:result1}\n else\n ${4:result2} $0\n",
+            "contents": "if ${1:condition1} > ${2:condition2}:\n   ${3:result_true}\n else\n ${4:result_false} $0\n",
             "kind": "snippet",
             "details": "A simple, non-<code>async</code> function definition"
         },
@@ -12,7 +12,7 @@
         {
             "trigger": "for",
             "annotation": "Looping",
-            "contents": "for ${1:i} = ${2:x} to ${3:y}\n ${4:statement}\n  ${5:return_statement}\n $0\n",
+            "contents": "for ${1:counter} = ${2:from_number} to ${3:other_number}\n ${4:statements}\n  ${5:return_statement}\n $0\n",
             "kind": "snippet",
             "details": "A simple, non-<code>async</code> function definition"
         },
@@ -20,7 +20,7 @@
         {
             "trigger": "for...in",
             "annotation": "Looping",
-            "contents": "for ${1:x} in ${2:y}\n ${3:statement}\n  ${4:return_statement}\n $0\n",
+            "contents": "for ${1:number} in ${2:numbers}\n ${3:statements}\n  ${4:return_statement}\n $0\n",
             "kind": "snippet",
             "details": "A simple, non-<code>async</code> function definition"
         },
@@ -28,9 +28,41 @@
         {
             "trigger": "switch",
             "annotation": "Conditional Statement",
-            "contents": "${1:variable_x} = switch ${2:expression}\n ${3:value1} => ${4:local_block}\n ${5:value2} => ${6:local_block}\n... \n => ${7:default_local_block}\n $0\n",
+            "contents": "switch ${1:expression}\n ${2:value1} => ${3:local_block}\n ${4:value2} => ${5:local_block}\n... \n => ${6:default_local_block}\n $0\n",
             "kind": "snippet",
             "details": "Switch With Expression"
+        },
+
+        {
+            "trigger": "switch",
+            "annotation": "Conditional Statement",
+            "contents": "switch\n ${1:value1} => ${2:local_block}\n ${3:value2} => ${4:local_block}\n... \n => ${5:default_local_block}\n $0\n",
+            "kind": "snippet",
+            "details": "Switch Without Expression"
+        },
+
+        {
+            "trigger": "var",
+            "annotation": "Variable",
+            "contents": "var ${1:variable_name} = ${2:expression} $0\n",
+            "kind": "snippet",
+            "details": "Variable"
+        },
+
+        {
+            "trigger": "varip",
+            "annotation": "Variable",
+            "contents": "varip ${1:variable_name} = ${2:expression} $0\n",
+            "kind": "snippet",
+            "details": "Variable"
+        },
+
+        {
+            "trigger": "while",
+            "annotation": "Variable",
+            "contents": "while ${1:boolean_expression}\n ${3:return_expression} $0\n",
+            "kind": "snippet",
+            "details": "Variable"
         }
 
     ]
